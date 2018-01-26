@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	padding:4em 2em 0em 0em;
+	
+}
+
+#header h1{
+	 display:block;
+	 text-align:center;
+	 letter-spacing:1vw;
+	 font-family:Lato;
+	 color:rgba(25,27,28,1);
+	 text-transform:uppercase;
+	 margin-bottom:1.2vh;
+	 font-style:italic;
+}
+
+/* Line Underneath Header*/
+	#header hr{
+		border:2px solid black;
+		width:35%;
+		margin: 0 auto;
+		margin-bottom:2.8vh;
+	}
+
+/* Gallery Elements*/
+
+	.slides img{
+		width:60%;
+		height:60%;
+		text-align:center;
+		display:block;
+		margin:0 auto;
+		border:5px solid rgba(25,27,28,1); 
+	}
+
+	#gallery button{
+		border:none;
+		display:inline-block;
+		outline:0;
+		padding:8px 16px;
+		overflow:hidden;
+		color:inherit;
+		cursor:pointer;
+
+	}
+	
+	/* Arrow Colors*/
+	.black{
+		color:#fff!important;
+		background-color:#000!important
+	}
+	
+	/*Arrow Left Of Gallery*/
+	.display-left{
+		position:absolute;
+		top:54%;
+		left:27%;
+		transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);
+	}
+	
+	/* Arrow Right Of Gallery*/
+	.display-right{
+		position:absolute;
+		top:53%;
+		right:13%;
+		transform:translate(0%,-50%);-ms-transform:translate(0%,-50%);
+	}
+
+	/* Times the Fade In for An Image*/
+	.fading-animation{
+		animation:fading 2.5s;
+	}
+
+	/* Uses Keyframes to transition from 0 opac to 1*/
+	@keyframes fading{
+		0%{opacity:0;}
+		100%{opacity:1;}
+	}
+	
+	/* Positions the Captions Of The Gallery*/
+	.bottom-middle
+	{
+		background: rgba(80, 80, 80, 0.75);
+		position:absolute;
+		top:79%;
+		left:57%;
+		transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%)	
+	}
+	/* Caption Of Each Image In Gallery*/
+	.text-caption{
+		display:inline-block;
+		padding:1em;
+		width:59%;
+		text-align:left;
+		color:white;
+		font-family:Lato;
+		letter-spacing:2px;
+	}
+	
+	/* Creates The Shape Of The Bubble*/
+	.badge{
+		position:relative;
+		left:40%;
+		margin-top:3vh;
+		text-align:center;
+		background: rgba(0,0,0,0.7);
+		color:#fff;
+		display:inline-block;
+		height:13px;
+		width:13px;
+		padding:0;
+		border-radius:50%;
+		cursor:pointer;
+	}
+	
+	/* The current image is represented by the Bubble*/
+	.currentBubble{
+		background-color:#000!important;
+	}
+	
+	/* When you hover over Bubbles*/
+	.bubble-hover-black:hover{
+		background-color:#000!important;
+	}
+	
+	/* Blank Space*/
+	#blackbox{
+		background-color:#FFF;
+		padding:3em;
+		
+	}

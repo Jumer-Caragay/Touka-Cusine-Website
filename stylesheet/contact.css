@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	padding:0em 2em 0em 4em;
+}
+
+/* Contact Us Header*/
+main h2{
+	text-align:left;
+	color:rgba(0,0,0,6);
+	font-family:Cinzel;
+	font-weight:5000;
+	letter-spacing:0.3vw;
+	font-size:2vw;
+}
+
+/* Centering and Background*/
+#header{
+	padding:0em 2em 1em 2em;
+    background:rgb(245,245,245);
+	margin:0 auto;
+	text-align:center;
+	border:2px solid
+}
+
+/* Header Styles*/
+#header h2{
+	 display:inline-block;
+	 letter-spacing:1vw;
+	 font-family:Cinzel;
+	 color:rgba(25,27,28,1);
+	 text-transform:uppercase;
+	 font-style:italic;
+}
+
+/* Line Below Header*/
+#header hr{
+	border:2px solid black;
+	width:18%;
+	margin: 0 auto;
+}
+
+/* Contact Page Banner Control*/
+#banner{
+	background:url(../images/images/jap.png);
+	height:280px;
+	background-size:cover;	
+}
+
+/* Fill Out Form*/
+.headerForm{
+	font-size:1.1rem;
+	font-family:Lato;
+	margin:1% 0 0 2%;
+	width:25%;
+	background:#bdc3c7;
+	padding:.5em;
+	outline:2px solid #95a5a6;
+}
+/* Form Container*/
+.form{
+	margin:0 0  0 1%;
+	width:32.5%;
+	padding:1em;
+	border-right:2px solid rgba(25,27,28,1);
+}
+
+/* Form Boxes*/
+.form input{
+	display:block;
+	margin-bottom:2.5%;
+	width:80%;
+	padding:1.2em;
+	font-size:1.1rem;
+	letter-spacing:3px;
+	font-family:Lato;
+	border:2px solid rgba(73, 106, 89, 0.5);
+	
+}
+
+/* Boxes When Clicked On */
+.form input[type="text"]:focus,
+.form input[type="text"].focus{
+	background:rgb(245,245,245);
+	border:2px solid rgba(25,27,28,1);
+	transition:.3s ease-in-out;
+}
+
+/* Big Box Subject Area*/
+.form textarea{
+	display:block;
+	float:left;
+	width:87%;
+	height:50%;
+	margin-top:1%;
+	letter-spacing:3px;
+	font-style:Lato;
+	font-size:1.2rem;
+	border:3px solid rgba(73, 106, 89, 0.5);
+}
+
+.form textarea:focus,
+.form textarea.focus{
+	border:2px solid rgba(73, 106, 89, 0.5);
+	transition:.3s ease-in-out;	
+}
+/* Submit Button For Form*/
+.button{
+	display:inline-block;
+	float:left;
+	margin-top:2.5%;
+	margin-right:50%;
+}
+
+/* End Of Fill Out Form*/
+
+
+/* Get Connected Container*/
+.info{
+	width:30%;
+	margin:1.5% 0 0 3.5%;
+	text-align:center;
+}
+
+/* Get Connected Header*/
+.socialhead{
+	text-align:left;
+	font-size:1.3rem;
+	font-family:Lato;
+	margin:.8% 0 0 12%;
+	width:25%;
+	background:#bdc3c7;
+	padding:.5em;
+	outline:2px solid #95a5a6;
+}
+/* Social Media Header*/
+.socialIcons h2{
+	background:#bdc3c7;
+	text-align:center;
+	width:100%;
+}
+
+/* Social Media Link Container*/
+.socialIcons{
+	display:inline-block;
+	width:100%;	
+	background:#bdc3c7;
+	padding:1.5em 2em 1.5em 2em;
+}
+
+/* Social Media Border Pics*/
+.social{
+	color:#ecf0f1;
+	font-size:1.5rem;
+	padding:.3em;
+	border:2px solid #ecf0f1;
+	border-radius:20%;
+}
+
+
+.info h1{
+	text-align:center;
+	letter-spacing:4px;
+	padding-left:2em;
+	font-family:Cinzel;
+	
+}
+
+/* Icon Styles*/
+	
+.twitter{
+	padding:.3em .4em .3em .4em;
+	
+}
+
+.facebook{
+	padding:.3em .5em .3em .5em ;
+}
+
+
+
+.instagram{
+	padding:.3em .4em .3em .4em;
+}
+
+
+
+.google{
+	padding:.3em .2em .3em .2em;
+}
+
+.skype{
+	padding:.3em .4em .3em .4em
+}
+
+/* End Of Icon Styles*/
+
+/* On Hover Effects*/
+	
+.twitter:hover{
+	background:#1da1f2;
+	transition:.2s ease-in-out;	
+}
+
+.facebook:hover{
+	background:#3b5998;
+	transition:.2s ease-in-out;
+}
+
+.instagram:hover{
+	background:#df3967;	
+	transition:.2s ease-in-out;
+}
+
+.google:hover{
+	background:#dd4637;	
+	transition:.2s ease-in-out;
+}
+
+.skype:hover{
+	background:#00aff0;
+	transition:.2s ease-in-out;
+}
+
+/* End Of Hover Effects*/
+
+#contactInfo{
+	margin-top:2.5%;
+}
+
+#contactDesc{
+	text-align:center;
+	background:#bdc3c7;
+	padding:1.5em 7em 1.5em 7em;
+	margin:5% 0 0 0;
+	width:72.5%;
+	text-align:center;
+}
+
+
+/* Code To Push Footer*/
+#blackbox{
+	background-color:#FFF;
+	padding:20% 0;
+}
+/* Floating Elements Left To Right*/
+.float{
+	float:left;
+	
+}

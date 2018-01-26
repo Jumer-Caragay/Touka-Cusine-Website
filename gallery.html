@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Touka Cuisine</title>
+<link href="stylesheet/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="stylesheet/gallery.css" rel="stylesheet" type="text/css"> <!-- Main Css-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/vendscripts/jquery.slides.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" />  <!-- Adds Little Icon To Browser-->
+</head>
+
+<body>
+
+<!-- Navigation Bar-->
+<nav>
+	<div id="color">
+		<h2 id="logo"><img src="images/logo/Logo.png" alt="Hello" width="140px" height="140px"/></h2>
+		<h2 id="textlogo">Touka</h2>
+	</div>
+    
+  	<ul>
+    	<li><a href="sushi.html">Home</a></li>
+   	 	<li><a href="gallery.html">Gallery</a></li>
+    	<li><a href="aboutus.html">About us</a></li>
+    	<li><a href="menu.html">Menu</a></li>
+    	<li><a href="contactus.html">Contact Us</a></li>
+  	</ul>
+  
+	<div id="social">
+    
+ 		<div class="social1">
+    		<i class="fa fa-twitter"></i>
+ 		</div>
+    
+ 		<div class="social2">
+    		<i class="fa fa-facebook"></i>
+ 		</div>
+    
+    
+	</div>
+</nav>
+
+
+<div id="placeholder">   
+        &nbsp;     
+</div>
+
+<main>
+
+	<!-- Header For Gallery Page-->
+	<div id ="header">
+		<h1>Touka Cuisine Gallery</h1>
+        	<hr/>
+	</div>
+    
+    <div id="gallery">
+    	
+        <!-- Pictures In the Gallery-->
+        
+        <div class="slides fading-animation">
+    		<img src="images/galleryImages/menu3-3.jpg"/>
+            <div class="bottom-middle text-caption">
+            	<h2>Famous Chicken Katsu</h2>
+            </div>
+        </div>
+        
+        <div class="slides fading-animation">
+    		<img src="images/galleryImages/Salmon-teriyaki-recipe.jpg"/>
+            <div class="bottom-middle text-caption">
+            	<h2>Touka Salmon</h2>
+            </div>
+        </div>
+        
+        <div class="slides fading-animation">
+   			<img src="images/galleryImages/maxresdefault.jpg"/>
+            <div class="bottom-middle text-caption">
+            	<h2>Touka Tempura</h2>
+            </div>
+        </div>
+    
+    	<!--- Left and Right Arrows-->
+    	<button class="black display-left" onclick="plusImg(-1)">&#10094;</button>
+        <button class="black display-right" onclick="plusImg(1)">&#10095;</button>
+        
+        <!-- Bubbles for Gallery-->
+    	<span class="badge demo  bubble-hover-black" onclick="currentDiv(1)"></span>
+    	<span class="badge demo  bubble-hover-black" onclick="currentDiv(2)"></span>
+    	<span class="badge demo  bubble-hover-black" onclick="currentDiv(3)"></span>
+    </div>
+    
+    <div id="blackbox">
+    
+    &nbsp;
+    
+    </div>
+    
+    <div class="footer">
+
+        <div id="media">
+            <a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa fa-google"></i>Google</a>
+            <a href="#"><i class="fa fa-skype"></i>Skype</a>
+        </div>
+    
+        <div id="links">
+            <a href="sushi.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    
+        <div id="types">
+            <a href="#">Tuna Sashimi </a>
+            <a href="#">Chutoro Sashimi</a>
+            <a href="#">Hamachi Sashim</a>
+            <a href="#">Salmon Sashim</a>
+            <a href="#">Combination Sashimi</a>
+        </div>
+    
+	</div>
+</main>
+
+
+
+<!-- Code For Gallery-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusImg(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("demo");
+  /* Resets The Index Below 1 Or Greater Than the Length*/
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  /* Defaults Images To Invisible*/
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  /*Resets Current Bubble*/
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("currentBubble", "");
+  }
+  /* Index Of the Image To Show*/
+  x[slideIndex-1].style.display = "block";
+  /* Adds Black Bubble To Class*/
+  dots[slideIndex-1].className += " currentBubble";  
+}
+</script>
+
+</body>
+</html>

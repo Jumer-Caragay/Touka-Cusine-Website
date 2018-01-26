@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@font-face{
+	font-weight:normal;
+	font-style:normal;
+	font-family: 'cinzel';
+	src:url(../fonts/Cinzel/Cinzel-Regular.otf);
+	src:url(../fonts/Cinzel/Cinzel-Regular.ttf) format('truetype');
+	src:url(../fonts/Cinzel/Cinzel-Bold.ttf) format('truetype');
+}
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	overflow-x:hidden;
+}
+/* Universal Navigation Bar*/
+nav{
+	width:13vw;
+	height:100vh;
+	position:fixed;
+	background:rgba(25,27,28,1);
+	z-index:5;
+}
+
+nav ul{
+	list-style-type:none;
+	padding:0;
+	
+		
+}
+
+nav ul li{
+	padding:0.9em;
+}
+
+nav ul li:hover{
+	border-left: 0.5vw rgb(152,77,77) solid;	
+}
+
+nav ul li a{
+	font-size:0.7vw;
+	text-decoration:none;
+	color:rgb(189,191,192);
+	display:block;
+	padding:1em;
+	font-weight:100;
+	text-indent:0.5vw;
+	font-family:cinzel;
+	text-transform:uppercase;
+	letter-spacing:0.2vw;
+}
+/* End Navigation Bar*/ 
+
+/* Nav Bar Logo*/
+#logo{
+	text-align:center;
+	
+}
+
+#color{
+	background:rgb(36,41,46);
+	padding:1.5em;
+}
+
+#textlogo{
+	font-family:cinzel;	
+	font-size:0.8vw;
+	text-transform:uppercase;
+	text-align:center;
+	color:rgb(189,191,192);
+	letter-spacing:1.5vw;
+	text-indent:0.6vw;
+	margin-bottom:0.5vw;
+	
+}
+
+#social{
+	width:100%;
+	border-top:1px solid white;
+	position:absolute;
+	bottom:0;
+}
+.social1{
+	width:6vw;
+	float:left;
+	border-right:1px solid white;
+	font-size:1.8vw;
+	text-align:center;
+	color:rgb(145,145,145) ;
+}
+.social2{
+	float:left;
+	width:6vw;
+	text-align:center;
+	font-size:1.8vw;
+	color:rgb(145,145,145);
+	margin-top:0.2vh;	
+}
+
+/* Ending  Navigation Bar*/
+
+/* Placeholder For The Navigation*/
+#placeholder{
+	width:13vw;
+	height:140vh;
+	float:left;
+}
+
+main{
+	width:100vw;
+}
+
+main p{
+	font-family:cinzel;	
+	
+}
+
+.seperate{
+	min-height:25px;
+	background:rgb(152,107,77);	
+}
+
+/* Only For Home Page*/
+/* Slider Content*/
+/* Prevent Slideshow from flashing*/
+
+	.sliderjs-container{
+		border-top:1px #d6d0c1 solid;
+	}
+	
+/* Allows Script To Control Images*/
+
+	#slides{
+		display:None;
+	}
+	.container{
+		width:auto; /* Allows Slider Images To Resize To Browser*/
+		margin:0 auto;
+		position:relative;
+	}
+
+	#slider_content1 , #slider_content2 , #slider_content3{
+		line-height:25px;
+		font-family:arvo;
+		width:350px; /* Limits Size Of Text going Across Page*/
+		position:absolute;
+		top:8%; /* Positions Text*/
+	    left:14.5%; /* Positions Text*/
+		display:none;
+		opacity:1;
+		z-index:11; /* Allows Text To Overlay The Images*/
+	}
+	
+	#slider_content1{
+		display:block; /* Allows Only Slider 1 Content To Display On Load*/
+	}
+	
+	/* Styles Headers For Content*/
+	#slider_content1 h2 , #slider_content2 h2 , #slider_content3 h2{
+		color:rgb(36,41,46);
+		font-size:30px;
+		font-weight:bold;
+		font-family:lato;
+		padding:10px 15px;
+		display:inline-block; /* Display Headings Inline Prevent Capability To Style Like Block Elements ( Width Height Margin And Padding)*/
+		letter-spacing:0.5vw;
+		margin-bottom:5px;
+	}
+	
+	#slider_content1 p , #slider_content2 p , #slider_content3 p{
+		margin:0 0 30px 0;
+		color:rgb(36,41,46);
+		font-family:arial;
+		font-size:25px;
+		font-weight:500;
+		letter-spacing:0.2vw;
+		padding:10px 15px;
+		text-align:left;
+	}
+	
+	#picture{
+		width:100vw;
+		height:14vh;
+		text-align:center;
+		padding:1em 0 1em 0;
+		border-bottom:2px solid rgb(232,232,232);
+	}
+	
+	.pics{
+		display:inline-block;
+		width:18.5vw;
+		text-align:left;
+		margin-right:2vw;
+		border-right:2px solid rgb(232,232,232);
+		overflow:hidden;
+	}
+	
+	.pics img{
+	  -moz-transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
+	  vertical-align:middle;
+	}
+	
+	.pics img:hover{
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);	
+		
+	}
+	
+	.pics h1{
+		display:inline-block;
+		text-align:right;
+		font-size:1vw;
+		letter-spacing:2px;
+		color:rgb(36,41,46) ;
+		position:absolute;
+		margin-left:0.5vw;
+	}
+	
+	.pics p{
+		display:inline-block;
+		position:absolute;
+		font-size:0.8vw;
+		font-family:lato;
+		color:rgb(36,41,46);
+		margin-top:3vh;	
+		margin-left:0.5vw;
+		width:8vw;
+	}
+	
+	#order{
+		text-align:center;	
+		background:rgb(152,107,77);
+		padding:5.5em;
+	}
+	
+	#order h1{
+		margin-bottom:1vh;
+		color:rgb(213,195,183);
+		letter-spacing:0.6vw;
+		font-family:Lato;
+		font-size:1.3vw;
+	}
+	
+	#order form{
+		letter-spacing:2px;
+		font-family:cinzel;
+		color:rgb(213,195,183);
+	}
+	
+	/* Universal Footer Code*/
+	.footer{
+		background:rgb(36,41,46);
+		padding:5%;
+		
+	}
+	
+	.footer i{
+			position:relative;
+			right:0.5vw;
+	}
+	
+	.footer a{
+		display:block;
+		font-family:lato;
+		font-size:0.8vw;
+		margin:0vw 8vw 1.9vw 4vw;
+		text-decoration:none;
+		text-transform:uppercase;
+		transition:0.3s ease-in-out;
+		color:rgb(158,158,158)
+	}
+	
+	.footer a:visited{
+		color:rgb(158,158,158);
+	}
+	
+	.footer a:hover{
+		color:rgb(255,255,255);
+	}
+	
+	#media{
+		float:left;
+	}
+	
+	#links{
+		float:left;	
+		margin-right:5vw;
+	}
+	
+	#types{
+		margin-left:10vw;
+		
+	}
+	
+	.black{
+		background:rgba(0,0,0,0.7);
+	
+	}
+	
+	

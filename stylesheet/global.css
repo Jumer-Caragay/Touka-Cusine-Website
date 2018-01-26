@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.button{
+        padding:7px 14px;
+        background-color:rgba(152,107,77,0.5);
+        color: #FFFFFF;
+        text-decoration:none;
+		margin-left:0.8vw;
+		letter-spacing:0.2vw;
+		transition:ease-in-out 0.5s;
+	}
+
+	.button:hover{
+        background:rgba(152,107,77,1);
+        color: #FFFFFF;
+		
+	}

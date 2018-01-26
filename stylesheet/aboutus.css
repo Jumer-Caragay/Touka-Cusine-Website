@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+main{
+	padding:4em 2em 2em 0em;
+	
+}
+
+/* The Main Header Of About Us On Top*/
+ main h1{
+	 margin-bottom:1em;
+	 letter-spacing:1vw;
+	 font-family:Cinzel;
+	 color:rgba(25,27,28,1);
+	 text-transform:uppercase;
+	 text-align:center;
+ }
+ 
+ /* Center Images In Gallery*/
+ #galleryPic{
+	text-align:center; 
+ }
+ 
+ /* Set The Specifc Sizes Of Images*/
+ #galleryPic img{
+	margin-right:1vw;
+	border:4px solid rgba(25,27,28,1); 
+	text-align:center;
+	width:25%;
+	height:20%;
+ }
+ 
+/* Styles For All Text In About Us)*/
+.text1{
+	margin-top:4vh;
+	margin-left:5vw;
+	padding-right:3em;
+	float:left;	
+}
+
+.text1 h2{
+	font-family:cinzel;
+	letter-spacing:8px;
+	font-size:3vw
+
+}
+
+
+.text1 h3{
+	font-family:lato;
+	letter-spacing:3px;
+}
+
+.text1 p{
+	margin-top:5vw;
+	width:30vw;	
+	
+}
+
+/* Adds A Division Between The Two Boxes*/
+.border-right{
+	
+	border-right:2px solid black;
+	
+}
+
+#placeholder{
+	height:50vh;	
+}
+
